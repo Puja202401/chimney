@@ -31,6 +31,75 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="img2/l1.png">
+    <style>
+  .whatsapp-btn-container {
+    position: fixed;
+    left: 10px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 4px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 15px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 50px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+.phone {
+
+    position: fixed;
+
+    right: 0px;
+
+    bottom: 7%;
+
+}
+
+ 
+
+.phone h5 {
+
+    color: white;
+
+    background: #0657d1;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+}
+</style>
 </head>
 
 <body>
@@ -470,6 +539,14 @@
         </div>
     </div>
     <!-- Testimonial End -->
+    <div class="whatsapp-btn-container">
+        <a class="whatsapp-btn" href="https://wa.me/7827012887"><i class="fab fa-whatsapp"></i></a>
+        <span>Contact Us</span>
+    </div>
+    <div>
+       <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-e82abd4e-c662-4830-be90-ff7b2ac67932" data-elfsight-app-lazy></div>
+
 
 
     <!-- Footer Start -->
